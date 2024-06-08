@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">imarticus class 01</string>
+    <string name="enter_pin_hint">పిన్‌ని నమోదు చేయండి</string>
+    <string name="enter_name_hint">పేరు నమోదు చేయండి</string>
+    <string name="Cancel_buttontext">రద్దు చేయండి</string>
+    <string name="sign_up_buttontext">చేరడం</string>
+    <string name="log_in_page_headinng">పేజీలోకి లాగిన్ అవ్వండి</string>
+</resources>

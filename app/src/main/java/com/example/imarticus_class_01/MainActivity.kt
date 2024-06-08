@@ -1,6 +1,10 @@
 package com.example.imarticus_class_01
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +20,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left , systemBars.top , systemBars.right , systemBars.bottom)
             insets
         }
+    }
+
+    fun onclicksignup(view: View) {
+        //var dailIntent:Intent=Intent(Intent.ACTION_CALL, Uri.parse("tel:98664135435"))
+        val webIntent:Intent=Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"))
+        startActivity(webIntent)
+
+        Log.i("Log in page","Sign Up Button Clicked")
+    }
+
+    fun onclickcancel(view: View) {
+        Log.i("Log in page","Cancel Button Clicked")
     }
 }

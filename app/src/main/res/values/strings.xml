@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">imarticus_class_01</string>
+    <string name="app_name">imarticus class 01</string>
+    <string name="enter_pin_hint">Enter Pin</string>
+    <string name="enter_name_hint">Enter Name</string>
+    <string name="Cancel_buttontext">Cancel</string>
+    <string name="sign_up_buttontext">Sign Up</string>
+    <string name="log_in_page_headinng">LOG IN PAGE</string>
 </resources>

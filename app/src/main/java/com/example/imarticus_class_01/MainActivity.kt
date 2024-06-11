@@ -23,10 +23,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onclicksignup(view: View) {
-        //var dailIntent:Intent=Intent(Intent.ACTION_CALL, Uri.parse("tel:98664135435"))
+      /*  //var dailIntent:Intent=Intent(Intent.ACTION_CALL, Uri.parse("tel:98664135435"))
         val webIntent:Intent=Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/"))
-        startActivity(webIntent)
-
+        startActivity(webIntent)*/
+        var hintent:Intent=Intent(this,home::class.java)
+        startActivity(hintent)
         Log.i("Log in page","Sign Up Button Clicked")
     }
 

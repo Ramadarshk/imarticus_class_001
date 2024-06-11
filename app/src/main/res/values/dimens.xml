@@ -3,6 +3,7 @@
     <dimen name="textsizeforbutton">16sp</dimen>
     <dimen name="buttionwitdh">105dp</dimen>
     <dimen name="TextSIze">30sp</dimen>
-    <dimen name="edittextsize">22sp</dimen>
+    <dimen name="edittextsize">20sp</dimen>
+    <dimen name="subheadtextsize">20sp</dimen>
     <dimen name="elevation_button">8dp</dimen>
 </resources>

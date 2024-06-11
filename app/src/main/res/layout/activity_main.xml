@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     android:layout_gravity="center"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
 
@@ -14,23 +14,25 @@
         android:id="@+id/pagetitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-thin"
         android:text="@string/log_in_page_headinng"
         android:textAlignment="center"
         android:textColor="@color/edittextcolour"
         android:textSize="@dimen/TextSIze"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/please_enter_name_here"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
 
     <EditText
         android:id="@+id/please_enter_name_here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/backgroundtintedittext"
         android:ems="10"
         android:hint="@string/enter_name_hint"
@@ -39,14 +41,15 @@
         android:textColorHint="@color/edittexthintcolour"
         android:textSize="@dimen/edittextsize"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/pagetitle" />
 
     <EditText
         android:id="@+id/enter_pin_here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/backgroundtintedittext"
         android:ems="10"
         android:hint="@string/enter_pin_hint"
@@ -55,14 +58,46 @@
         android:textColorHint="@color/edittexthintcolour"
         android:textSize="@dimen/edittextsize"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/please_enter_name_here" />
+
+    <EditText
+        android:id="@+id/enter_age_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/backgroundtintedittext"
+        android:ems="10"
+        android:hint="@string/enter_age_hint"
+        android:inputType="number"
+        android:textColor="@color/edittextcolour"
+        android:textColorHint="@color/edittexthintcolour"
+        android:textSize="@dimen/edittextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_pin_here" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/gender"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/subheadtextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_age_here" />
 
     <Button
         android:id="@+id/press_to_sign_up"
         android:layout_width="@dimen/buttionwitdh"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="56dp"
         android:backgroundTint="@color/buttontint"
         android:elevation="@dimen/elevation_button"
         android:onClick="onclicksignup"
@@ -71,26 +106,111 @@
         android:textSize="@dimen/textsizeforbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toEndOf="@+id/press_to_cancel"
-        app:layout_constraintTop_toBottomOf="@+id/enter_pin_here"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
-    <Button
-        android:id="@+id/press_to_cancel"
+    <RadioGroup
+        android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/buttontint"
-        android:elevation="@dimen/elevation_button"
-        android:onClick="onclickcancel"
-        android:text="@string/Cancel_buttontext"
-        android:textColor="@color/buttoncolortext"
-        android:textSize="@dimen/textsizeforbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_pin_here"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/hobbies"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/subheadtextsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox1"
+                android:textColor="@color/textcolor" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox4"
+                android:textColor="@color/textcolor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox2"
+                android:textColor="@color/textcolor" />
+
+            <Space
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox3"
+                android:textColor="@color/textcolor" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

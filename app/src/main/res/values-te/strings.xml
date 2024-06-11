@@ -6,4 +6,14 @@
     <string name="Cancel_buttontext">రద్దు చేయండి</string>
     <string name="sign_up_buttontext">చేరడం</string>
     <string name="log_in_page_headinng">పేజీలోకి లాగిన్ అవ్వండి</string>
+    <string name="gender">లింగం</string>
+    <string name="male">పురుషుడు</string>
+    <string name="female">స్త్రీ</string>
+    <string name="other">ఇతర</string>
+    <string name="enter_age_hint">వయస్సు</string>
+    <string name="checkbox1">చదవడం</string>
+    <string name="checkbox2">క్రీడలు</string>
+    <string name="checkbox3">సంగీతం</string>
+    <string name="checkbox4">గేమింగ్</string>
+    <string name="hobbies">అభిరుచులు</string>
 </resources>

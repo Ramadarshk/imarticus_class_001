@@ -18,11 +18,11 @@ class home : AppCompatActivity() {
             v.setPadding(systemBars.left , systemBars.top , systemBars.right , systemBars.bottom)
             insets
         }
-        val home:TextView=findViewById(R.id.name)
-        val pin:TextView=findViewById(R.id.pin)
-        val age:TextView=findViewById(R.id.age)
-        val genders:TextView=findViewById(R.id.genderv)
-        val hobbies:TextView=findViewById(R.id.hobbies)
+        val home:TextView=findViewById(R.id.namevr)
+        val pin:TextView=findViewById(R.id.pinvr)
+        val age:TextView=findViewById(R.id.agevr)
+        val genders:TextView=findViewById(R.id.gendervr)
+        val hobbies:TextView=findViewById(R.id.hobbiesvr)
         val mes=intent.extras
         home.text=mes?.getString("name")
         pin.text=mes?.getString("pin")

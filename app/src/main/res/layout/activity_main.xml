@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-thin"
+        android:hapticFeedbackEnabled="true"
         android:text="@string/log_in_page_headinng"
         android:textAlignment="center"
         android:textColor="@color/edittextcolour"
@@ -30,53 +31,53 @@
 
     <EditText
         android:id="@+id/please_enter_name_here"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/backgroundtintedittext"
         android:ems="10"
+        android:hapticFeedbackEnabled="true"
         android:hint="@string/enter_name_hint"
         android:inputType="text"
         android:textColor="@color/edittextcolour"
         android:textColorHint="@color/edittexthintcolour"
         android:textSize="@dimen/edittextsize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/pagetitle" />
 
     <EditText
         android:id="@+id/enter_pin_here"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/backgroundtintedittext"
         android:ems="10"
+        android:hapticFeedbackEnabled="true"
         android:hint="@string/enter_pin_hint"
         android:inputType="numberPassword"
         android:textColor="@color/edittextcolour"
         android:textColorHint="@color/edittexthintcolour"
         android:textSize="@dimen/edittextsize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/please_enter_name_here" />
 
     <EditText
         android:id="@+id/enter_age_here"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/backgroundtintedittext"
         android:ems="10"
+        android:hapticFeedbackEnabled="true"
         android:hint="@string/enter_age_hint"
         android:inputType="number"
         android:textColor="@color/edittextcolour"
         android:textColorHint="@color/edittexthintcolour"
         android:textSize="@dimen/edittextsize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/enter_pin_here" />
 
     <TextView
@@ -84,65 +85,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:hapticFeedbackEnabled="true"
         android:text="@string/gender"
         android:textColor="@color/textcolor"
         android:textSize="@dimen/subheadtextsize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.268"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/enter_age_here" />
 
     <Button
         android:id="@+id/press_to_sign_up"
         android:layout_width="@dimen/buttionwitdh"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/buttontint"
         android:elevation="@dimen/elevation_button"
+        android:hapticFeedbackEnabled="true"
         android:onClick="onclicksignup"
         android:text="@string/sign_up_buttontext"
         android:textColor="@color/buttoncolortext"
         android:textSize="@dimen/textsizeforbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
     <RadioGroup
         android:id="@+id/gender"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:hapticFeedbackEnabled="true"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/male"
+            android:textAllCaps="true"
             android:textColor="@color/textcolor"
             android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/female"
+            android:textAllCaps="true"
             android:textColor="@color/textcolor"
             android:textSize="16sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/other"
+            android:textAllCaps="true"
             android:textColor="@color/textcolor"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            app:useMaterialThemeColors="true" />
     </RadioGroup>
 
     <TextView
@@ -150,67 +155,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:hapticFeedbackEnabled="true"
         android:text="@string/hobbies"
         android:textColor="@color/textcolor"
         android:textSize="@dimen/subheadtextsize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/gender" />
 
-    <TableLayout
-        android:layout_width="match_parent"
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        android:layout_marginTop="20dp"
+        android:text="@string/checkbox1"
+        android:textColor="@color/textcolor"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:hapticFeedbackEnabled="true" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/checkbox4"
+        android:textColor="@color/textcolor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/checkBox" />
 
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/checkbox1"
-                android:textColor="@color/textcolor" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/checkbox2"
+        android:textColor="@color/textcolor"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
-            <Space
-                android:layout_width="70dp"
-                android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/checkbox3"
+        android:textColor="@color/textcolor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/checkBox3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3" />
 
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/checkbox4"
-                android:textColor="@color/textcolor" />
-        </TableRow>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.19" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/checkbox2"
-                android:textColor="@color/textcolor" />
-
-            <Space
-                android:layout_width="70dp"
-                android:layout_height="wrap_content" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/checkbox3"
-                android:textColor="@color/textcolor" />
-        </TableRow>
-    </TableLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.81" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -92,23 +92,6 @@
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/enter_age_here" />
 
-    <Button
-        android:id="@+id/press_to_sign_up"
-        android:layout_width="@dimen/buttionwitdh"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/buttontint"
-        android:elevation="@dimen/elevation_button"
-        android:hapticFeedbackEnabled="true"
-        android:onClick="onclicksignup"
-        android:text="@string/sign_up_buttontext"
-        android:textColor="@color/buttoncolortext"
-        android:textSize="@dimen/textsizeforbutton"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
-
     <RadioGroup
         android:id="@+id/gender"
         android:layout_width="0dp"
@@ -117,7 +100,6 @@
         android:gravity="center_horizontal"
         android:hapticFeedbackEnabled="true"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
@@ -207,6 +189,23 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toEndOf="@+id/checkBox3" />
+
+    <Button
+        android:id="@+id/press_to_sign_up"
+        android:layout_width="@dimen/buttionwitdh"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/buttontint"
+        android:elevation="@dimen/elevation_button"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="onclicksignup"
+        android:text="@string/sign_up_buttontext"
+        android:textColor="@color/buttoncolortext"
+        android:textSize="@dimen/textsizeforbutton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"

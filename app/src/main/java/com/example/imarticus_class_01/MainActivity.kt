@@ -1,7 +1,6 @@
 package com.example.imarticus_class_01
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,7 +8,6 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -43,13 +41,13 @@ class MainActivity : AppCompatActivity() {
         val checkbox3: CheckBox =findViewById(R.id.checkBox3)
         val checkbox4: CheckBox =findViewById(R.id.checkBox4)
         val hobbies= retstr(checkbox1)+retstr(checkbox2)+retstr(checkbox3)+retstr(checkbox4)
-        val from1tohintent:Intent=Intent(this,home::class.java)
-        from1tohintent.putExtra("name",name.text.toString())
-        from1tohintent.putExtra("pin",pin.text.toString())
-        from1tohintent.putExtra("age",age.text.toString())
-        from1tohintent.putExtra("gender",ide.text.toString())
-        from1tohintent.putExtra("hobbies",hobbies)
-        startActivity(from1tohintent)
+        val from1ToHIntent:Intent=Intent(this,home::class.java)
+        from1ToHIntent.putExtra("name",name.text.toString())
+        from1ToHIntent.putExtra("pin",pin.text.toString())
+        from1ToHIntent.putExtra("age",age.text.toString())
+        from1ToHIntent.putExtra("gender",ide.text.toString())
+        from1ToHIntent.putExtra("hobbies",hobbies)
+        startActivity(from1ToHIntent)
         Log.i("Log in page", name.text.toString())
     }
 

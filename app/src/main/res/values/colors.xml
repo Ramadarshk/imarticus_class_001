@@ -2,12 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background">#E1000000</color>
-    <color name="likegreen">#17AF17</color>
-    <color name="textcolor">@color/likegreen</color>
-    <color name="backgroundtintedittext">@color/likegreen</color>
-    <color name="edittextcolour">@color/likegreen</color>
-    <color name="edittexthintcolour">@color/likegreen</color>
+    <color name="background">#EA000000</color>
+    <color name="like_green">#17AF17</color>
+    <color name="textcolor">@color/like_green</color>
+    <color name="backgroundtintedittext">@color/like_green</color>
+    <color name="edittextcolour">@color/like_green</color>
+    <color name="edittexthintcolour">@color/like_green</color>
     <color name="buttoncolortext">@color/black</color>
-    <color name="buttontint">@color/likegreen</color>
+    <color name="buttontint">@color/like_green</color>
 </resources>

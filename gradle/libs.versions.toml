@@ -12,6 +12,7 @@ constraintlayout = "2.1.4"
 retrofit = "2.9.0"
 runner = "1.5.2"
 junitKtx = "1.1.5"
+junitKtxVersion = "1.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +27,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtxVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
